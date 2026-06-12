@@ -26,9 +26,11 @@ No accounts, no streaming, no uploads.
 
 ## Screenshots
 
-| Home | Library | Now playing & synced lyrics |
-|---|---|---|
-| ![Home screen](screenshots/home.png) | ![Library — Albums](screenshots/library.png) | ![Now playing with synced lyrics](screenshots/now-playing.png) |
+![Home screen](screenshots/home.png)
+
+![Library — Albums](screenshots/library.png)
+
+![Now playing with synced lyrics](screenshots/now-playing.png)
 
 ## Download
 
