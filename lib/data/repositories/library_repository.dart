@@ -1,5 +1,6 @@
 import 'dart:io';
 
+import 'package:path/path.dart' as p;
 import 'package:sqflite/sqflite.dart';
 
 import '../database/database_helper.dart';
@@ -72,6 +73,26 @@ class LibraryRepository {
     if (missing.isEmpty) return;
     final placeholders = List.filled(missing.length, '?').join(',');
     await db.delete('tracks', where: 'path IN ($placeholders)', whereArgs: missing);
+  }
+
+  /// Deletes all tracks whose file path is inside [folderPath]. Used when a
+  /// watched folder is removed, so its tracks (and the albums/artists
+  /// derived from them) disappear immediately rather than lingering until
+  /// the next scan happens to clean them up.
+  Future<void> removeTracksInFolder(String folderPath) async {
+    final db = await _db.database;
+    final normalized = p.normalize(folderPath);
+    final prefix = normalized.endsWith(Platform.pathSeparator)
+        ? normalized
+        : '$normalized${Platform.pathSeparator}';
+    final rows = await db.query('tracks', columns: ['id', 'path']);
+    final ids = rows
+        .where((r) => (r['path'] as String).startsWith(prefix))
+        .map((r) => r['id'] as int)
+        .toList();
+    if (ids.isEmpty) return;
+    final placeholders = List.filled(ids.length, '?').join(',');
+    await db.delete('tracks', where: 'id IN ($placeholders)', whereArgs: ids);
   }
 
   Future<Track?> getTrackByPath(String path) async {

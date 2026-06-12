@@ -164,13 +164,21 @@ class LibraryController extends StateNotifier<LibraryState> {
 
     state = state.copyWith(loading: false, resetProgress: reset);
     await load();
+    _ref.invalidate(albumsProvider);
+    _ref.invalidate(artistsProvider);
     return added;
   }
 
   Future<void> removeFolder(String path) async {
     final repo = _ref.read(libraryRepositoryProvider);
     await repo.removeWatchedFolder(path);
+    await repo.removeTracksInFolder(path);
     await load();
+    _ref.invalidate(albumsProvider);
+    _ref.invalidate(artistsProvider);
+    _ref.invalidate(favoriteTracksProvider);
+    _ref.invalidate(favoriteAlbumsProvider);
+    _ref.invalidate(favoriteArtistsProvider);
   }
 
   /// Completely removes a track from disk and the DB, updating all
