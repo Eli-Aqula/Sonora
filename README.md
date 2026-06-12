@@ -20,7 +20,7 @@ builds a local library — albums, artists, playlists, favorites — with synced
 lyrics, cover art, and metadata editing, all backed by a local SQLite database.
 No accounts, no streaming, no uploads.
 
-> **Status:** **beta** (`v0.1.0-beta.1`). Core playback, library, lyrics and
+> **Status:** **beta** (`v0.1.0-beta.2`). Core playback, library, lyrics and
 > Genius integration work; expect rough edges and breaking changes between
 > beta releases.
 
