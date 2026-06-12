@@ -42,7 +42,12 @@ jobs:
         run: flutter pub get
 
       - name: Build Windows release
-        run: flutter build windows --release
+        shell: pwsh
+        run: |
+          # permission_handler_windows still uses <experimental/coroutine>,
+          # which newer MSVC toolsets on windows-latest treat as a hard error.
+          $env:CL = "/D_SILENCE_EXPERIMENTAL_COROUTINE_DEPRECATION_WARNINGS"
+          flutter build windows --release
 
       - name: Package portable ZIP
         shell: pwsh
