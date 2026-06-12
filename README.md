@@ -13,6 +13,10 @@
   <a href="LICENSE"><img alt="License: AGPL v3" src="https://img.shields.io/badge/License-AGPLv3-blue.svg"></a>
 </p>
 
+<p align="center">
+  <a href="https://github.com/Eli-Aqula/Sonora/releases/latest"><img alt="Download for Windows" src="https://img.shields.io/badge/Download-Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white"></a>
+</p>
+
 ---
 
 Sonora plays the music you already have. Point it at your music folders and it
