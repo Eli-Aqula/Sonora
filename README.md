@@ -42,6 +42,13 @@ Windows builds are published on the [**Releases**](https://github.com/Eli-Aqula/
 - **`Sonora-<version>-windows-portable.zip`** — portable build. Unzip anywhere
   and run `Sonora.exe` directly, no installation needed.
 
+> [!NOTE]
+> Windows may show a **"Windows protected your PC"** SmartScreen warning when
+> you run the installer or `Sonora.exe`. This happens because the app isn't
+> digitally signed yet (code-signing certificates are costly for a beta
+> project) — it does **not** mean the file is unsafe. Click **"More info"**,
+> then **"Run anyway"** to continue.
+
 Linux and Android are currently build-from-source only (see [Getting started](#getting-started)).
 
 ## Features
