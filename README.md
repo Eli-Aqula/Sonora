@@ -24,6 +24,12 @@ No accounts, no streaming, no uploads.
 > Genius integration work; expect rough edges and breaking changes between
 > beta releases.
 
+## Screenshots
+
+| Home | Library | Now playing & synced lyrics |
+|---|---|---|
+| ![Home screen](screenshots/home.png) | ![Library — Albums](screenshots/library.png) | ![Now playing with synced lyrics](screenshots/now-playing.png) |
+
 ## Download
 
 Windows builds are published on the [**Releases**](https://github.com/Eli-Aqula/Sonora/releases) page:
