@@ -47,11 +47,8 @@ Linux and Android are currently build-from-source only (see [Getting started](#g
   via the [Genius API](https://genius.com/api-clients) using your own API token.
 - **Tag editing** — read and write track metadata (title, artist, album, cover
   art, etc.) directly from the app.
-- **Adaptive theming** — album art drives accent colors via on-device palette
-  extraction.
 - **Favorites & playlists** — favorite tracks/artists and build custom playlists.
-- **Search** — search your local library and (optionally) Genius.
-- **Localization** — English and Russian UI, with more languages easy to add.
+- **Search** — search your local library.
 - **Cross-platform** — one codebase, adaptive desktop (Windows, Linux) and
   mobile (Android) layouts.
 
