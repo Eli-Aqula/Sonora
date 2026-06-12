@@ -1,0 +1,351 @@
+{
+  "@@locale": "en",
+
+  "settingsTitle": "Settings",
+  "settingsLanguageLabel": "Language",
+  "settingsGeniusDescription": "Genius API is used to automatically fetch metadata (title, artist, album, year, cover art, lyrics).",
+  "settingsGeniusTokenLabel": "Genius API token",
+  "settingsTokenHint": "Paste your client token…",
+  "settingsEnterTokenToTest": "Enter a token to test it",
+  "settingsTokenWorks": "Token works ({count} hits)",
+  "@settingsTokenWorks": {
+    "placeholders": {
+      "count": {"type": "int"}
+    }
+  },
+  "settingsGenericError": "Error: {error}",
+  "@settingsGenericError": {
+    "placeholders": {
+      "error": {"type": "String"}
+    }
+  },
+  "settingsTokenRemoved": "Genius token removed",
+  "settingsTokenSaved": "Genius token saved",
+  "settingsAutoEnrichLabel": "Auto-update on import",
+  "settingsSetTokenFirst": "Set and save a token first",
+  "settingsAutoEnrichDescription": "Automatically update metadata when importing a folder",
+  "settingsTokenStatusSaved": "Token saved",
+  "settingsTokenStatusNotSet": "Token not set",
+  "settingsCancel": "Cancel",
+  "settingsSave": "Save",
+  "settingsLyricsSectionTitle": "Synchronized lyrics",
+  "settingsLyricsDescription": "Lyrics are fetched from LRCLib — an open database of professionally synchronized lyrics. No setup required: press \"Sync\" on a track and the app will look up the LRC by its tags automatically. Internet access is only needed while searching.",
+  "settingsGetTokenInstructions": "Get a token at genius.com/api-clients → \"Generate Access Token\".",
+  "settingsTesting": "Testing…",
+  "settingsTest": "Test",
+
+  "commonCancel": "Cancel",
+  "commonSave": "Save",
+  "commonCreate": "Create",
+  "commonDelete": "Delete",
+  "commonRename": "Rename",
+  "commonOk": "OK",
+  "commonName": "Name",
+  "commonError": "Error: {error}",
+  "@commonError": {
+    "placeholders": {
+      "error": {"type": "String"}
+    }
+  },
+
+  "navSearch": "Search",
+  "navHome": "Home",
+  "navFavorites": "Favorites",
+  "navLibrary": "Library",
+  "navSettings": "Settings",
+  "sidebarPlaylists": "Playlists",
+  "sidebarCreatePlaylist": "Create playlist",
+  "sidebarPlaylistsEmpty": "Playlists will appear here",
+  "sidebarNewPlaylistTitle": "New playlist",
+  "sidebarChangeCover": "Change cover",
+  "sidebarSetCover": "Set cover",
+  "sidebarRemoveCover": "Remove cover",
+  "sidebarCoverSetFailedTitle": "Couldn't set cover",
+  "sidebarDeletePlaylistTitle": "Delete playlist?",
+  "sidebarDeletePlaylistConfirm": "\"{name}\" will be deleted permanently.",
+  "@sidebarDeletePlaylistConfirm": {
+    "placeholders": {
+      "name": {"type": "String"}
+    }
+  },
+
+  "commonSeeAll": "All →",
+  "homeTracksCount": "{count, plural, =1{1 track} other{{count} tracks}}",
+  "@homeTracksCount": {
+    "placeholders": {
+      "count": {"type": "num", "format": "compact"}
+    }
+  },
+  "homeAlbumsCount": "{count, plural, =1{1 album} other{{count} albums}}",
+  "@homeAlbumsCount": {
+    "placeholders": {
+      "count": {"type": "num", "format": "compact"}
+    }
+  },
+  "homeArtistsCount": "{count, plural, =1{1 artist} other{{count} artists}}",
+  "@homeArtistsCount": {
+    "placeholders": {
+      "count": {"type": "num", "format": "compact"}
+    }
+  },
+  "homeRescan": "Rescan",
+  "homeQuickActions": "Quick actions",
+  "homeAllTracks": "All tracks",
+  "homeShuffleTitle": "Shuffle",
+  "homeShuffleSubtitle": "Random order",
+  "nowPlayingLabel": "Now playing",
+  "homeAlbumsTitle": "Albums",
+  "homeNoAlbums": "No albums yet",
+  "homeArtistsTitle": "Artists",
+  "homeNoArtists": "No artists yet",
+  "homeCreatePlaylistHint": "Create a playlist from the sidebar",
+  "homeRecentlyAdded": "Recently added",
+  "homeEmptyTitle": "Add a music folder",
+  "homeEmptyDescription": "Sonora will scan the selected folder and fetch metadata.\nSupported formats: MP3, FLAC, M4A, OGG, OPUS, WAV.",
+  "homeChooseFolder": "Choose folder",
+
+  "commonAll": "All",
+  "mobileAudioPermissionMessage": "Sonora needs access to audio files",
+  "mobileFilePickError": "Error picking files: {error}",
+  "@mobileFilePickError": {
+    "placeholders": {
+      "error": {"type": "String"}
+    }
+  },
+  "mobileShuffle": "Shuffle",
+  "mobileEmptyTitle": "Add music",
+  "mobileEmptyDescription": "Sonora plays MP3, FLAC, M4A, OGG, OPUS, WAV.",
+  "mobileChooseFiles": "Choose files",
+
+  "commonClose": "Close",
+  "playerNothingPlaying": "Nothing playing",
+  "playerLyricsTooltip": "Lyrics",
+  "playerActionsTooltip": "Actions",
+  "playerPreviousTooltip": "Previous",
+  "playerNextTooltip": "Next",
+  "playerRepeatOff": "Repeat: off",
+  "playerRepeatAll": "Repeat: all",
+  "playerRepeatOne": "Repeat: one",
+  "playerRemoveFavorite": "Remove from favorites",
+  "playerAddFavorite": "Add to favorites",
+  "playerCollapse": "Collapse",
+  "lyricsTitle": "Lyrics",
+  "lyricsNotFound": "Lyrics not found",
+  "lyricsResync": "Resync",
+  "lyricsSync": "Sync",
+
+  "playerMuteTooltip": "Mute",
+  "playerUnmuteTooltip": "Unmute",
+
+  "trackAddToPlaylist": "Add to playlist",
+  "trackEditTags": "Edit tags",
+  "trackFindOnGenius": "Find on Genius",
+  "trackDeleteFromDevice": "Delete from device",
+  "trackNotInLibrary": "Track is not yet saved in the library",
+  "trackCreatePlaylistFirst": "Create a playlist first",
+  "trackAddedToPlaylist": "Added to \"{name}\"",
+  "@trackAddedToPlaylist": {
+    "placeholders": {
+      "name": {"type": "String"}
+    }
+  },
+  "trackDeleteTitle": "Delete track?",
+  "trackDeleteConfirm": "The file \"{title}\" will be permanently deleted from the device.",
+  "@trackDeleteConfirm": {
+    "placeholders": {
+      "title": {"type": "String"}
+    }
+  },
+  "trackDeleted": "\"{title}\" deleted",
+  "@trackDeleted": {
+    "placeholders": {
+      "title": {"type": "String"}
+    }
+  },
+  "trackTagsUpdated": "Tags for \"{title}\" updated",
+  "@trackTagsUpdated": {
+    "placeholders": {
+      "title": {"type": "String"}
+    }
+  },
+  "trackTagsUpdatedFrom": "Tags updated from \"{title}\"",
+  "@trackTagsUpdatedFrom": {
+    "placeholders": {
+      "title": {"type": "String"}
+    }
+  },
+  "trackTagsWriteFailed": "Failed to write tags: {error}",
+  "@trackTagsWriteFailed": {
+    "placeholders": {
+      "error": {"type": "String"}
+    }
+  },
+  "geniusError": "Genius: {error}",
+  "@geniusError": {
+    "placeholders": {
+      "error": {"type": "String"}
+    }
+  },
+
+  "geniusSearchingEllipsis": "Searching Genius…",
+  "geniusNoResultsFor": "No results found for \"{title}\"",
+  "@geniusNoResultsFor": {
+    "placeholders": {
+      "title": {"type": "String"}
+    }
+  },
+  "geniusChangeQuery": "Change query",
+  "geniusUnknownError": "Unknown error",
+  "commonRetry": "Retry",
+  "commonApply": "Apply",
+  "geniusSearchingShort": "Searching…",
+  "geniusMatchesFound": "{count, plural, =1{1 match found} other{{count} matches found}}",
+  "@geniusMatchesFound": {
+    "placeholders": {
+      "count": {"type": "num", "format": "compact"}
+    }
+  },
+  "geniusNothingFound": "Nothing found",
+  "geniusErrorLabel": "Error",
+  "geniusSingle": "Single",
+  "geniusSearchButton": "Search",
+  "geniusQueryHint": "e.g.: Artist Song Title",
+
+  "geniusArtistSearchingEllipsis": "Searching artists on Genius…",
+  "geniusArtistsFound": "{count, plural, =1{1 artist found} other{{count} artists found}}",
+  "@geniusArtistsFound": {
+    "placeholders": {
+      "count": {"type": "num", "format": "compact"}
+    }
+  },
+  "geniusFindArtist": "Find artist on Genius",
+  "geniusArtistQueryHint": "e.g.: Sugarcult",
+
+  "lyricsSyncingEllipsis": "Syncing...",
+  "lyricsOffsetLabel": "Offset:",
+  "lyricsOffsetValue": "{value}s",
+  "@lyricsOffsetValue": {
+    "placeholders": {
+      "value": {"type": "String"}
+    }
+  },
+  "lyricsEarlierBy": "Lyrics {seconds}s earlier",
+  "@lyricsEarlierBy": {
+    "placeholders": {
+      "seconds": {"type": "String"}
+    }
+  },
+  "lyricsLaterBy": "Lyrics {seconds}s later",
+  "@lyricsLaterBy": {
+    "placeholders": {
+      "seconds": {"type": "String"}
+    }
+  },
+
+  "tagEditorChooseCoverImageDialog": "Choose a cover image",
+  "tagEditorTitle": "Edit tags",
+  "tagEditorPlayingWarning": "This track is currently playing. Writing may be blocked — pause it first.",
+  "tagEditorTitleField": "Title",
+  "tagEditorArtist": "Artist",
+  "tagEditorAlbum": "Album",
+  "tagEditorAlbumArtist": "Album artist",
+  "tagEditorYear": "Year",
+  "tagEditorTrackNumber": "Track #",
+  "tagEditorDiscNumber": "Disc #",
+  "tagEditorGenre": "Genre",
+  "tagEditorSaving": "Saving…",
+  "tagEditorChooseCover": "Choose cover",
+  "tagEditorRevertCover": "Revert to original",
+
+  "commonBack": "Back",
+  "playlistEmptyMessage": "This playlist is empty. Add tracks from the library's context menu.",
+  "playlistLabel": "PLAYLIST",
+  "playlistListen": "Listen",
+  "playlistShuffle": "Shuffle",
+  "playlistCoverTooltip": "Cover",
+
+  "libraryAddFolder": "Add folder",
+  "libraryRemoveFolderTitle": "Remove folder?",
+  "libraryRemoveFolderConfirm": "The folder \"{path}\" will be removed from the watched list, and its tracks will be removed from the library.",
+  "@libraryRemoveFolderConfirm": {
+    "placeholders": {
+      "path": {"type": "String"}
+    }
+  },
+  "libraryTabTracks": "Tracks",
+  "libraryTabAlbums": "Albums",
+  "libraryTabArtists": "Artists",
+  "libraryTabFolders": "Folders",
+  "libraryNoFolders": "No folders added yet",
+  "libraryArtistAlbumsAndTracks": "{albums} • {tracks}",
+  "@libraryArtistAlbumsAndTracks": {
+    "placeholders": {
+      "albums": {"type": "String"},
+      "tracks": {"type": "String"}
+    }
+  },
+
+  "favoritesNoTracks": "No favorite tracks yet",
+  "favoritesNoAlbums": "No favorite albums yet",
+  "favoritesNoArtists": "No favorite artists yet",
+
+  "artistLabel": "ARTIST",
+  "artistDataFetched": "Fetched data for \"{name}\"",
+  "@artistDataFetched": {
+    "placeholders": {
+      "name": {"type": "String"}
+    }
+  },
+
+  "albumLabel": "ALBUM",
+  "albumNoTracks": "No tracks",
+
+  "searchHint": "Track, artist or album…",
+  "searchHistoryEmpty": "Your recent searches will appear here",
+  "searchHistoryTitle": "History",
+  "searchResultsFound": "Found: {count}",
+  "@searchResultsFound": {
+    "placeholders": {
+      "count": {"type": "int"}
+    }
+  },
+
+  "trackPlay": "Play",
+  "trackAddToQueue": "Add to queue",
+  "trackAddToPlaylistEllipsis": "Add to playlist…",
+  "trackEditTagsEllipsis": "Edit tags…",
+  "trackAddedToQueue": "\"{title}\" added to queue",
+  "@trackAddedToQueue": {
+    "placeholders": {
+      "title": {"type": "String"}
+    }
+  },
+  "trackAddedToFavorites": "\"{title}\" added to favorites",
+  "@trackAddedToFavorites": {
+    "placeholders": {
+      "title": {"type": "String"}
+    }
+  },
+  "trackRemovedFromFavorites": "\"{title}\" removed from favorites",
+  "@trackRemovedFromFavorites": {
+    "placeholders": {
+      "title": {"type": "String"}
+    }
+  },
+
+  "trackListEmpty": "Nothing here yet",
+
+  "durationHoursMinutes": "{hours}h {minutes}m",
+  "@durationHoursMinutes": {
+    "placeholders": {
+      "hours": {"type": "int"},
+      "minutes": {"type": "int"}
+    }
+  },
+  "durationMinutes": "{minutes}m",
+  "@durationMinutes": {
+    "placeholders": {
+      "minutes": {"type": "int"}
+    }
+  }
+}

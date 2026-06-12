@@ -1,0 +1,18 @@
+[frb]
+build = true
+
+[frb.android]
+build = false
+
+[frb.ios]
+build = false
+
+[frb.macos]
+build = true
+
+[frb.linux]
+build = false
+
+[frb.windows]
+build = true
+libraries = ["libsonora_native"]

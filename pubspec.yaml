@@ -1,0 +1,64 @@
+name: sonora
+description: "Sonora — a local music player."
+publish_to: 'none'
+version: 0.1.0-beta.1+1
+
+environment:
+  sdk: ^3.9.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+
+  # FFI
+  ffi: ^2.1.0
+
+  # State management
+  flutter_riverpod: ^2.6.1
+
+  # Audio. media_kit_libs_audio pulls in native libmpv for all platforms,
+  # including Android — without it media_kit silently plays nothing on
+  # Android.
+  media_kit: ^1.2.6
+  media_kit_libs_audio: ^1.0.7
+
+  # Storage
+  sqflite: ^2.4.1
+  # On Windows/Linux/macOS sqflite has no native driver, so on desktop we
+  # initialize sqflite_common_ffi and swap in databaseFactoryFfi
+  # (see main.dart).
+  sqflite_common_ffi: ^2.3.4
+  path: ^1.9.0
+  path_provider: ^2.1.5
+  shared_preferences: ^2.3.3
+
+  # UI / utilities
+  file_picker: ^8.1.7
+  permission_handler: ^11.3.1
+  audiotags: ^1.4.5
+  rxdart: ^0.28.0
+  intl: ^0.20.1
+  cupertino_icons: ^1.0.8
+  palette_generator: ^0.3.3+5
+
+  # Networking (Genius API + Whisper auto-download)
+  http: ^1.2.0
+
+  # Unpacking whisper-bin-x64.zip / ffmpeg-essentials.zip
+  archive: ^3.6.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
+  generate: true
+
+  fonts:
+    - family: Onest
+      fonts:
+        - asset: assets/fonts/Onest-VariableFont_wght.ttf
