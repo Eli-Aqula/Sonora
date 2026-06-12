@@ -17,6 +17,10 @@
   <a href="https://github.com/Eli-Aqula/Sonora/releases/latest"><img alt="Download for Windows" src="https://img.shields.io/badge/Download-Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white"></a>
 </p>
 
+<p align="center">
+  <a href="https://www.producthunt.com/products/sonora?embed=true&amp;utm_source=badge-featured&amp;utm_medium=badge&amp;utm_campaign=badge-sonora-2" target="_blank" rel="noopener noreferrer"><img alt="Sonora - A local-first music player with synced karaoke lyrics | Product Hunt" width="250" height="54" src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=1170227&amp;theme=light&amp;t=1781278618162"></a>
+</p>
+
 ---
 
 Sonora plays the music you already have. Point it at your music folders and it
