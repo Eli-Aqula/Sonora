@@ -129,6 +129,10 @@ on the [Releases page](https://github.com/Eli-Aqula/Sonora/releases). Tags
 containing `-beta` (or any other pre-release suffix) are published as
 **pre-releases**.
 
+## Roadmap
+
+Planned features and progress are tracked on the [project board](https://github.com/users/Eli-Aqula/projects/1).
+
 ## License
 
 Sonora is licensed under the [GNU Affero General Public License v3.0](LICENSE) (AGPL-3.0-or-later).
